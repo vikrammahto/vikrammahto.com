@@ -1,9 +1,18 @@
 import React from 'react';
 import sangeet from '../assets/images/sangeet-music-desktop-ui.png';
 import engding from '../assets/images/engding-thumb.png';
+import tototimer from '../assets/images/tototimer.svg';
 
 const Projects = () => {
   const works = [
+    {
+      title: 'Tototimer',
+      description: 'PWA App to Manage Time, Money and Work. [React, Tailwind CSS]',
+      code: 'https://github.com/vikrammahto/tototimer',
+      live: 'https://tototimer.vercel.app/',
+      stack: 'React, Tailwind CSS',
+      thumbnail: tototimer,
+    },
     {
       title: 'Sangeet - Music UI',
       description: 'Music app desktop UI made using HTML, Vanilla CSS and JS',
@@ -13,7 +22,7 @@ const Projects = () => {
       thumbnail: sangeet,
     },
     {
-      title: 'EndDing',
+      title: 'EngDing',
       description: 'E-learning landing page design using Bootstrap 5',
       code: 'https://github.com/vikrammahto/engding',
       live: 'https://vikrammahto.github.io/engding/',
@@ -24,37 +33,37 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="mt-20 flex flex-col items-start space-y-5 md:mt-32 md:space-y-7 md:px-5 lg:mt-32"
+      className="flex flex-col items-start mt-20 space-y-5 md:mt-32 md:space-y-7 md:px-5 lg:mt-32"
     >
       <h1 className="text-3xl font-bold">Projects</h1>
-      <div className="mt-12 grid gap-12 md:grid-cols-3">
+      <div className="grid gap-12 mt-12 md:grid-cols-3">
         {works.map((work, index) => (
           <div
             key={index}
-            className="group space-y-5 p-4 lg:gap-x-0 lg:gap-y-5 border border-zinc-100 hover:border-zinc-200 rounded-2xl"
+            className="p-4 space-y-5 border border-white group lg:gap-x-0 lg:gap-y-5 hover:border-zinc-200 rounded-2xl"
           >
             <img
               alt="blog"
               loading="lazy"
               width="400"
               height="400"
-              className="h-auto w-full rounded-2xl object-cover"
+              className="object-cover w-full h-auto rounded-2xl"
               src={work.thumbnail}
             />
             <div className="flex flex-col items-start space-y-3">
-              <h2 className="font-semibold text-xl">{work.title}</h2>
+              <h2 className="text-xl font-semibold">{work.title}</h2>
               <p>{work.description}</p>
-              <div className="flex w-full flex-row items-center">
+              <div className="flex flex-row items-center w-full">
                 <a
                   href={work.live}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-auto rounded-lg border px-3 py-1 hover:bg-zinc-900 hover:text-white transition ease-in-out delay-150 duration-500"
+                  className="w-auto px-3 py-1 transition duration-500 ease-in-out delay-150 border rounded-lg hover:bg-zinc-900 hover:text-white"
                 >
                   Live{' '}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="icon icon-tabler icon-tabler-devices inline-block w-4 h-4"
+                    className="inline-block w-4 h-4 icon icon-tabler icon-tabler-devices"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
@@ -74,12 +83,12 @@ const Projects = () => {
                   href={work.code}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-auto rounded-lg border px-3 py-1 ms-3 hover:bg-zinc-900 hover:text-white transition ease-in-out delay-150 duration-500"
+                  className="w-auto px-3 py-1 transition duration-500 ease-in-out delay-150 border rounded-lg ms-3 hover:bg-zinc-900 hover:text-white"
                 >
                   Source Code{' '}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    className="icon icon-tabler icon-tabler-code inline-block w-4 h-4"
+                    className="inline-block w-4 h-4 icon icon-tabler icon-tabler-code"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"
