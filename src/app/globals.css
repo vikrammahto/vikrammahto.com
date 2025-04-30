@@ -1,10 +1,1 @@
 @import 'tailwindcss';
-
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap')
-layer(utilities);
-
-@layer base {
-  html {
-    font-family: Work Sans, system-ui, sans-serif;
-  }
-}

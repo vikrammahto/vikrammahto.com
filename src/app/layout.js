@@ -1,11 +1,12 @@
-import { Geist } from 'next/font/google';
+import { Figtree } from 'next/font/google';
 import './globals.css';
 import Header from '../layout/Header';
 import Footer from '../layout/Footer';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const figtree = Figtree({
   subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-figtree',
 });
 
 export const metadata = {
@@ -60,11 +61,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased`}>
+      <body className={`${figtree.className} antialiased`}>
         <Header />
-        <main className="font-[family-name:var(--font-geist-sans)]">
-          {children}
-        </main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
