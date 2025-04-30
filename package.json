@@ -13,6 +13,6 @@
     "start": "npx serve@latest ./build"
   },
   "devDependencies": {
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^4.1.4"
   }
 }
