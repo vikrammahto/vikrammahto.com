@@ -1,13 +1,28 @@
+'use client';
 import Link from 'next/link';
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 
 const Header = () => {
+  const [hasBorder, setHasBorder] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasBorder(window.scrollY > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
-    <header className="sticky top-0 z-40 mx-auto w-full border-b border-neutral-800 bg-neutral-950">
+    <header
+      className={`sticky top-0 z-40 mx-auto w-full ${
+        hasBorder ? 'border-b border-neutral-800 bg-neutral-950 shadow-xl shadow-lime-400/5' : ''
+      }`}
+    >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-10 py-3 md:px-4">
         <Link
           href="/"
-          className="flex text-2xl leading-none font-semibold whitespace-nowrap"
+          className="flex text-xl leading-none font-medium whitespace-nowrap"
           aria-label="Vikram Mahto - Frontend Developer personal portfolio website"
         >
           Vikram Mahto

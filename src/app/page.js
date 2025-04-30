@@ -5,7 +5,7 @@ import React from 'react';
 
 const page = () => {
   return (
-    <div className='space-y-20'>
+    <div className="space-y-20">
       <Hero />
       <Skills />
       <Projects />

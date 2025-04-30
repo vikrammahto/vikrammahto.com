@@ -61,7 +61,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${figtree.className} bg-neutral-950 antialiased text-white`}>
+      <body
+        className={`${figtree.className} bg-neutral-950 text-white antialiased`}
+      >
+        <div className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] bg-[size:24px_24px]"></div>
         <Header />
         <main>{children}</main>
         <Footer />
