@@ -50,16 +50,16 @@ const Hero = () => {
           </a>
           .
         </p>
-        <div className="flex w-full items-center md:flex-row md:justify-start md:space-x-5 md:space-y-0">
+        <div className="flex w-full items-center md:flex-row md:justify-start md:space-y-0 md:space-x-5">
           <a
             href="https://www.linkedin.com/in/vikrammahto/"
-            className="border border-zinc-900 bg-zinc-900 text-white px-6 py-2 rounded-full"
+            className="rounded-full border border-zinc-900 bg-zinc-900 px-6 py-2 text-white"
           >
             Hire Me
           </a>
           <a
             href="#projects"
-            className="border border-gray-200 text-zinc-900 px-6 py-2 rounded-full ms-3"
+            className="ms-3 rounded-full border border-gray-200 px-6 py-2 text-zinc-900"
           >
             Projects
           </a>
