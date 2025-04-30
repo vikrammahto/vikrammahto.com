@@ -1,20 +1,21 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-40 flex-none mx-auto w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-xs border-b dark:border-b-0">
-      <div className="py-3 px-3 mx-auto w-full flex justify-between align-middle max-w-6xl md:px-4">
-        <a
+    <header className="sticky top-0 z-40 mx-auto w-full border-b border-neutral-800 bg-neutral-950">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-10 py-3 md:px-4">
+        <Link
           href="/"
-          className="flex text-2xl font-bold text-gray-900 whitespace-nowrap dark:text-white"
+          className="flex text-2xl leading-none font-semibold whitespace-nowrap"
           aria-label="Vikram Mahto - Frontend Developer personal portfolio website"
         >
           Vikram Mahto
-        </a>
+        </Link>
         <div className="flex">
           <a
             href="https://github.com/vikrammahto"
-            className="inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full transition"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-lime-400/50 transition-all duration-300 ease-in-out hover:bg-lime-400 hover:text-black"
             aria-label="View my projects on Github"
             target="_blank"
             rel="noreferrer"

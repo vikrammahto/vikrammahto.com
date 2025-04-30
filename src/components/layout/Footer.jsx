@@ -2,9 +2,9 @@ import React from 'react';
 
 const Footer = () => {
   const iconStyle =
-    'inline-flex justify-center items-center w-10 h-10 text-center text-gray-500 hover:bg-gray-100 rounded-full transition';
+    'inline-flex justify-center items-center w-10 h-10 text-center text-lime-400/50 hover:bg-lime-400 hover:text-black rounded-full transition-all duration-300 ease-in-out';
   return (
-    <footer className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+    <footer className="py-10 px-4 sm:px-6 lg:px-8 mx-auto mt-10">
       <div className="text-center">
         Made by Vikram Mahto
         <div className="mt-3 space-x-2">

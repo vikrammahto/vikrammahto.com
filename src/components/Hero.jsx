@@ -1,71 +1,52 @@
-import React from 'react';
+'use client';
+import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
 
 const Hero = () => {
   return (
-    <div>
-      <div className="mt-20 flex flex-col items-start space-y-5 md:mt-32 md:space-y-7 md:px-5 lg:mt-32">
-        <h1 className="text-4xl font-semibold">
-          Hey, I'm Vikram. <br />{' '}
-        </h1>
-        <h2 className="text-3xl">
-          I build websites with a focus on responsive design and accessibility.
-        </h2>
-        <p className="text-xl">
-          I'm a Frontend Developer, Web & Graphics Designer, and open-source
-          contributor. <br /> Find me on{' '}
-          <a
-            href="https://github.com/vikrammahto"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            GitHub
-          </a>
-          ,{' '}
-          <a
-            href="https://www.linkedin.com/in/vikrammahto/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            LinkedIn
-          </a>
-          ,{' '}
-          <a
-            href="https://www.behance.net/vikrammahto"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            Behance,
-          </a>{' '}
-          and{' '}
-          <a
-            href="https://twitter.com/here_vikram"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-          >
-            Twitter
-          </a>
-          .
+    <section className="mx-auto flex max-w-6xl flex-col justify-between gap-20 px-10 pt-20 md:px-4 lg:flex-row lg:pt-40">
+      <div>
+        <span>Hey there, I am</span>
+        <h1 className="text-2xl font-medium lg:text-4xl">Vikram Mahto</h1>
+        <p className="font-light lg:text-xl">
+          Frontend Engineer | Open-Source Contributor
         </p>
-        <div className="flex w-full items-center md:flex-row md:justify-start md:space-y-0 md:space-x-5">
-          <a
-            href="https://www.linkedin.com/in/vikrammahto/"
-            className="rounded-full border border-zinc-900 bg-zinc-900 px-6 py-2 text-white"
-          >
-            Hire Me
-          </a>
-          <a
-            href="#projects"
-            className="ms-3 rounded-full border border-gray-200 px-6 py-2 text-zinc-900"
-          >
-            Projects
-          </a>
+        <p className="mt-5">
+          I craft visually stunning, accessible, and high-performing websites.{' '}
+          <br className="hidden lg:block" />
+          With expertise in{' '}
+          <span className="font-normal">
+            {' '}
+            React.js, Next.js, and TailwindCSS,
+          </span>{' '}
+          I blend creativity with code to build seamless digital experiences.
+        </p>
+        <div className="mt-6 flex items-center gap-2">
+          <span className="relative flex size-3">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-lime-400 opacity-75"></span>
+            <span className="relative inline-flex size-3 rounded-full bg-lime-500"></span>
+          </span>
+          <p>Actively looking for full-time opportunities.</p>
         </div>
+        <a
+          href="https://www.linkedin.com/in/vikrammahto/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex rounded-lg border border-lime-400/50 bg-lime-400/10 px-8 py-2 text-lime-400 transition duration-300 hover:cursor-pointer hover:bg-lime-400/20 hover:text-lime-400 font-semibold"
+        >
+          Hire me!
+        </a>
       </div>
-    </div>
+      <div>
+        <Image
+          src={'/vikrammahto.jpeg'}
+          width={400}
+          height={400}
+          alt="Vikram Mahto"
+          className="rounded-2xl"
+        />
+      </div>
+    </section>
   );
 };
 
