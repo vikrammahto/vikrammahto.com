@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 
-const Home = () => {
+const page = () => {
   return (
     <div>
       <Hero />
@@ -13,4 +13,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default page;
