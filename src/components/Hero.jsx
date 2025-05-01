@@ -1,10 +1,10 @@
 'use client';
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="mx-auto flex max-w-6xl flex-col justify-between gap-20 px-10 pt-20 md:px-4 lg:flex-row lg:pt-40">
+    <section className="mx-auto flex max-w-6xl flex-col justify-between gap-20 px-4 pt-20 lg:flex-row lg:pt-40">
       <div>
         <span>Hey there, I am</span>
         <h1 className="text-2xl font-medium lg:text-4xl">Vikram Mahto</h1>
@@ -38,7 +38,7 @@ const Hero = () => {
             Hire me
           </a>
           <a
-            href="https://www.linkedin.com/in/vikrammahto/"
+            href="https://drive.google.com/drive/folders/1PRZ8xxm1csyc-k3zo23mDU8zqxjzdguP?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex cursor-pointer rounded-lg border border-lime-400/50 px-8 py-2 font-semibold text-lime-400 transition duration-300 hover:bg-lime-400/20 hover:text-lime-400"
