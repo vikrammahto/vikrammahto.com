@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 const Hero = () => {
   return (
@@ -28,14 +28,24 @@ const Hero = () => {
           </span>
           <p>Actively looking for full-time opportunities.</p>
         </div>
-        <a
-          href="https://www.linkedin.com/in/vikrammahto/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-flex rounded-lg border border-lime-400/50 bg-lime-400/10 px-8 py-2 text-lime-400 transition duration-300 hover:cursor-pointer hover:bg-lime-400/20 hover:text-lime-400 font-semibold"
-        >
-          Hire me!
-        </a>
+        <div className="mt-6 space-x-3">
+          <a
+            href="https://www.linkedin.com/in/vikrammahto/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex cursor-pointer rounded-lg border border-lime-400/50 bg-lime-400/10 px-8 py-2 font-semibold text-lime-400 transition duration-300 hover:bg-lime-400/20 hover:text-lime-400"
+          >
+            Hire me
+          </a>
+          <a
+            href="https://drive.google.com/drive/folders/1PRZ8xxm1csyc-k3zo23mDU8zqxjzdguP?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex cursor-pointer rounded-lg border border-lime-400/50 px-8 py-2 font-semibold text-lime-400 transition duration-300 hover:bg-lime-400/20 hover:text-lime-400"
+          >
+            My resume
+          </a>
+        </div>
       </div>
       <div>
         <Image
