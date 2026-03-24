@@ -1,8 +1,8 @@
 'use client';
 import Link from 'next/link';
-import React, {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
-const Header = () => {
+export const Header = () => {
   const [hasBorder, setHasBorder] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,9 @@ const Header = () => {
   return (
     <header
       className={`sticky top-0 z-40 mx-auto w-full ${
-        hasBorder ? 'border-b border-neutral-800 bg-neutral-950 shadow-xl shadow-lime-400/5' : ''
+        hasBorder
+          ? 'border-b border-neutral-800 bg-neutral-950 shadow-xl shadow-lime-400/5'
+          : ''
       }`}
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-10 py-3 md:px-4">
@@ -51,5 +53,3 @@ const Header = () => {
     </header>
   );
 };
-
-export default Header;

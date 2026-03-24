@@ -1,10 +1,8 @@
-import React from 'react';
-
-const Footer = () => {
+export const Footer = () => {
   const iconStyle =
     'inline-flex justify-center items-center w-10 h-10 text-center text-lime-400/50 hover:bg-lime-400 hover:text-black rounded-full transition-all duration-300 ease-in-out';
   return (
-    <footer className="py-10 px-4 sm:px-6 lg:px-8 mx-auto mt-10">
+    <footer className="mx-auto mt-10 px-4 py-10 sm:px-6 lg:px-8">
       <div className="text-center">
         Made by Vikram Mahto
         <div className="mt-3 space-x-2">
@@ -85,5 +83,3 @@ const Footer = () => {
     </footer>
   );
 };
-
-export default Footer;

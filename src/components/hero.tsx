@@ -1,8 +1,6 @@
 'use client';
-import Image from 'next/image';
-import React, { useState, useEffect } from 'react';
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <section className="mx-auto flex max-w-6xl flex-col justify-between gap-20 px-10 pt-20 md:px-4 lg:flex-row lg:pt-40">
       <div>
@@ -32,13 +30,13 @@ const Hero = () => {
           href="https://www.linkedin.com/in/vikrammahto/"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-flex rounded-lg border border-lime-400/50 bg-lime-400/10 px-8 py-2 text-lime-400 transition duration-300 hover:cursor-pointer hover:bg-lime-400/20 hover:text-lime-400 font-semibold"
+          className="mt-6 inline-flex rounded-lg border border-lime-400/50 bg-lime-400/10 px-8 py-2 font-semibold text-lime-400 transition duration-300 hover:cursor-pointer hover:bg-lime-400/20 hover:text-lime-400"
         >
           Hire me!
         </a>
       </div>
       <div>
-        <Image
+        <img
           src={'/vikrammahto.jpeg'}
           width={400}
           height={400}
@@ -49,5 +47,3 @@ const Hero = () => {
     </section>
   );
 };
-
-export default Hero;

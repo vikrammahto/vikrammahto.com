@@ -1,7 +1,10 @@
-import React from 'react';
+interface SkillCategory {
+  category: string;
+  items: string[];
+}
 
-const Skills = () => {
-  const skills = [
+export const Skills = () => {
+  const skills: SkillCategory[] = [
     {
       category: 'Languages',
       items: ['HTML', 'CSS', 'JavaScript'],
@@ -28,11 +31,11 @@ const Skills = () => {
       <h1 className="border-b border-lime-400 bg-lime-400/10 px-4 py-1 text-xl">
         Tech Stack
       </h1>
-      <div className="md:grid md:grid-cols-3 gap-4">
+      <div className="gap-4 md:grid md:grid-cols-3">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="border-b-2 border-dashed border-zinc-300 py-3 lg:py-0 md:border-0"
+            className="border-b-2 border-dashed border-zinc-300 py-3 md:border-0 lg:py-0"
           >
             <h2 className="text-xl">{skill.category}</h2>
             <div className="flex">
@@ -53,5 +56,3 @@ const Skills = () => {
     </div>
   );
 };
-
-export default Skills;

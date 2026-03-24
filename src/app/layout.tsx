@@ -1,7 +1,7 @@
 import { Figtree } from 'next/font/google';
 import './globals.css';
-import Header from '../components/layout/Header';
-import Footer from '../components/layout/Footer';
+import { Header } from '@/components/layout/header';
+import { Footer } from '@/components/layout/footer';
 
 const figtree = Figtree({
   subsets: ['latin'],
@@ -58,7 +58,11 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body

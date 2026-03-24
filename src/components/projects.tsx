@@ -1,8 +1,14 @@
-import Image from 'next/image';
-import React from 'react';
+interface Project {
+  title: string;
+  description: string;
+  code: string;
+  live: string;
+  stack: string;
+  thumbnail: string;
+}
 
-const Projects = () => {
-  const works = [
+export const Projects = () => {
+  const works: Project[] = [
     {
       title: 'Tototimer',
       description:
@@ -43,11 +49,11 @@ const Projects = () => {
             key={index}
             className="group space-y-5 rounded-2xl hover:border-zinc-200 lg:gap-x-0 lg:gap-y-5"
           >
-            <Image
+            <img
               alt="blog"
               loading="lazy"
-              width="400"
-              height="400"
+              width={400}
+              height={400}
               className="h-auto w-full rounded-2xl object-cover"
               src={`/projects/${work.thumbnail}`}
             />
@@ -79,5 +85,3 @@ const Projects = () => {
     </div>
   );
 };
-
-export default Projects;
