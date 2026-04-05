@@ -1,7 +1,5 @@
 import { Figtree } from 'next/font/google';
 import './globals.css';
-import { Header } from '@/components/layout/header';
-import { Footer } from '@/components/layout/footer';
 
 const figtree = Figtree({
   subsets: ['latin'],
@@ -10,15 +8,16 @@ const figtree = Figtree({
 });
 
 export const metadata = {
-  title: 'Vikram Mahto | Frontend Developer',
+  title: 'Vikram Mahto | Design Engineer | UI/UX + Frontend',
   description:
-    'Frontend Developer specializing in responsive, accessible, and high-performance websites using React.js, Next.js, and TailwindCSS.',
+    'Design Engineer specializing in responsive, accessible, and high-performance websites using React.js, Next.js, and TailwindCSS.',
   keywords: [
     'Frontend Developer',
     'Frontend Engineer',
+    'Design Engineer',
     'UI/UX Designer',
-    'React.js',
-    'Next.js',
+    'React.js Developer',
+    'Next.js Developer',
     'Web Development',
     'TailwindCSS',
     'Freelance Web Developer',
@@ -30,7 +29,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     url: 'https://vikrammahto.com',
-    title: 'Vikram Mahto | Frontend Developer',
+    title: 'Vikram Mahto | Design Engineer | UI/UX + Frontend',
     description:
       "I build visually appealing, high-performance, and accessible websites. Let's create something amazing together!",
     images: [
@@ -38,14 +37,14 @@ export const metadata = {
         url: '/vikram-mahto-frontend-developer.png',
         width: 1200,
         height: 630,
-        alt: 'Vikram Mahto - Frontend Developer',
+        alt: 'Vikram Mahto - Design Engineer | UI/UX + Frontend',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     site: '@here_vikram',
-    title: 'Vikram Mahto | Frontend Developer',
+    title: 'Vikram Mahto | Design Engineer | UI/UX + Frontend',
     description:
       "I craft modern, user-friendly web experiences using React, Next.js, and TailwindCSS. Let's collaborate!",
     images: ['/vikram-mahto-frontend-developer.png'],
@@ -65,13 +64,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${figtree.className} bg-neutral-950 text-white antialiased`}
-      >
-        <div className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)] bg-[size:24px_24px]"></div>
-        <Header />
+      <body className={`${figtree.className} e antialiased`}>
         <main>{children}</main>
-        <Footer />
       </body>
     </html>
   );
