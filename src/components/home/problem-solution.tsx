@@ -1,11 +1,6 @@
 'use client';
 
-import {
-  CheckCircleIcon,
-  CheckIcon,
-  XCircleIcon,
-  XIcon,
-} from '@phosphor-icons/react';
+import { CheckCircleIcon, XCircleIcon, XIcon } from '@phosphor-icons/react';
 
 const founderChallenges = [
   'building takes too long',
