@@ -15,14 +15,21 @@ export function BeforeFooterCta() {
         </p>
         <Link
           href="#"
-          className="group flex items-center justify-center rounded-2xl border border-orange-600 bg-gradient-to-b from-orange-400 via-orange-500 to-orange-600 px-5 py-2 text-lg font-medium text-neutral-50 shadow-[inset_0_1px_0px_0px_#fdba74] active:[box-shadow:none]"
+          className="group flex items-center justify-center rounded-2xl border border-orange-600 bg-gradient-to-b from-orange-400 via-orange-500 to-orange-600 px-5 py-2 text-lg font-medium text-white shadow-[inset_0_1px_0px_0px_#fdba74] transition-all hover:scale-110 hover:from-orange-600 hover:to-orange-400 active:[box-shadow:none]"
         >
           <span className="block group-active:[transform:translate3d(0,1px,0)]">
             Book a Call
           </span>
         </Link>
         <p className="text-zinc-300">
-          or email directly: <span className="font-medium">your@email.com</span>
+          or send message directly:{' '}
+          <a
+            href="https://t.me/vikramstack"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            t.me/vikramstack
+          </a>
         </p>
       </div>
     </section>

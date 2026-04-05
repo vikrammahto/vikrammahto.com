@@ -1,5 +1,6 @@
 import { Figtree } from 'next/font/google';
 import './globals.css';
+import { Footer } from '@/components/layout/footer';
 
 const figtree = Figtree({
   subsets: ['latin'],
@@ -18,11 +19,7 @@ export const metadata = {
     'UI/UX Designer',
     'React.js Developer',
     'Next.js Developer',
-    'Web Development',
-    'TailwindCSS',
-    'Freelance Web Developer',
-    'Accessibility',
-    'Responsive Design',
+    'Freelance Frontend Developer for Hire',
   ],
   authors: [{ name: 'Vikram Mahto', url: 'https://vikrammahto.com' }],
   robots: 'index, follow',
@@ -43,7 +40,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    site: '@here_vikram',
+    site: '@vikramstack',
     title: 'Vikram Mahto | Design Engineer | UI/UX + Frontend',
     description:
       "I craft modern, user-friendly web experiences using React, Next.js, and TailwindCSS. Let's collaborate!",
@@ -66,6 +63,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${figtree.className} e antialiased`}>
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

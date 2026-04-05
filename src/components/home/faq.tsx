@@ -46,7 +46,7 @@ export function Faq() {
             key={faq.question}
             className="group rounded-[24px] border border-dashed border-zinc-200 bg-white p-5"
           >
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-zinc-950">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-zinc-950">
               <span>{faq.question}</span>
               <span className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-200 text-lg text-zinc-600 transition group-open:rotate-45">
                 +
