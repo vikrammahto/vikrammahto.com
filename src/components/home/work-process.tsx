@@ -1,3 +1,19 @@
+'use client';
+import {
+  BlueprintIcon,
+  ClipboardTextIcon,
+  ClockUserIcon,
+  CodeSimpleIcon,
+  CompassIcon,
+  CrosshairIcon,
+  LightbulbFilamentIcon,
+  MapPinSimpleAreaIcon,
+  PackageIcon,
+  RocketLaunchIcon,
+  ScanIcon,
+  UsersThreeIcon,
+} from '@phosphor-icons/react';
+
 const processSteps = [
   {
     number: '01',
@@ -5,6 +21,7 @@ const processSteps = [
     description:
       'We begin with a quick call to understand your idea, audience, and goals.',
     tags: ['Idea', 'Audience', 'Goals'],
+    icons: [LightbulbFilamentIcon, UsersThreeIcon, CrosshairIcon],
   },
   {
     number: '02',
@@ -12,6 +29,7 @@ const processSteps = [
     description:
       'Next, I turn your idea into a clear roadmap with the right features and direction.',
     tags: ['Roadmap', 'Features', 'Direction'],
+    icons: [BlueprintIcon, ClipboardTextIcon, CompassIcon],
   },
   {
     number: '03',
@@ -19,6 +37,7 @@ const processSteps = [
     description:
       'You get a clear project scope, timeline, and deliverables before we begin.',
     tags: ['Scope', 'Timeline', 'Deliverables'],
+    icons: [MapPinSimpleAreaIcon, ClockUserIcon, PackageIcon],
   },
   {
     number: '04',
@@ -26,6 +45,7 @@ const processSteps = [
     description:
       'I design, build and launch the product with regular updates along the way.',
     tags: ['Build', 'Refine', 'Launch'],
+    icons: [CodeSimpleIcon, ScanIcon, RocketLaunchIcon],
   },
 ];
 
@@ -48,26 +68,23 @@ export function WorkProcess() {
           return (
             <div
               key={step.title}
-              className="rounded-2xl border border-dashed border-zinc-200 bg-white p-5 transition-all duration-200 hover:-translate-y-1 sm:p-6"
+              className="group rounded-3xl border border-dashed border-zinc-200/80 bg-gradient-to-br from-white to-zinc-50/80 p-5 ring-1 ring-black/[0.02] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/60 sm:p-6"
             >
-              <span className="inline-flex text-6xl font-extrabold text-zinc-800/10">
+              <span className="inline-flex text-6xl font-black tracking-tighter text-zinc-200 transition-colors duration-300 group-hover:text-zinc-300">
                 {step.number}
               </span>
 
-              <div className="mt-5 rounded-2xl border border-dashed border-zinc-200 bg-zinc-50/80 p-4 sm:p-5">
-                <div className="flex flex-wrap items-center gap-3">
-                  {step.tags.map((tag) => (
+              <div className="mt-6">
+                <div className="mb-4 flex items-center gap-2">
+                  {step.icons.map((Icon, index) => (
                     <span
-                      key={tag}
-                      className="rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs font-medium text-zinc-600"
+                      key={index}
+                      className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-zinc-200 bg-white/90 text-zinc-600 shadow-sm transition-transform duration-300 group-hover:-translate-y-0.5"
                     >
-                      {tag}
+                      <Icon size={20} weight="duotone" />
                     </span>
                   ))}
                 </div>
-              </div>
-
-              <div className="mt-6">
                 <h3 className="text-2xl font-semibold text-zinc-950">
                   {step.title}
                 </h3>
