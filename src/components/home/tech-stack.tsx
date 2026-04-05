@@ -32,7 +32,9 @@ export function TechStack() {
   return (
     <section className="px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
       <div className="space-y-3 text-center">
-        <p className="text-zinc-500">Tools & Technologies that I work with</p>
+        <p className="text-zinc-500">
+          Tools & Technologies <br className="sm:hidden" /> that I work with
+        </p>
         <h2 className="text-3xl font-bold text-zinc-950 sm:text-4xl">
           A focused set of tools I use to design, build, <br />
           and ship fast, scalable digital products.

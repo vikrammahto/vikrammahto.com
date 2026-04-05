@@ -3,11 +3,12 @@ export function ProblemSolution() {
     <section className="px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
       <div className="mx-auto space-y-8 text-center text-xl">
         <p className="text-2xl text-zinc-700">
-          I work with founders and organizations who want to <br /> turn ideas
-          into real, usable products — not just prototypes.
+          I work with founders and organizations who want to{' '}
+          <br className="hidden sm:block" /> turn ideas into real, usable
+          products — not just prototypes.
         </p>
 
-        <div className="grid grid-cols-2 gap-4 rounded-3xl border border-dashed border-zinc-300 p-6">
+        <div className="grid gap-4 rounded-3xl border-dashed border-zinc-300 sm:border sm:p-6 md:grid-cols-2">
           <div className="rounded-2xl border border-dashed border-zinc-200 bg-zinc-50/50 p-6 text-left">
             <p className="text-2xl font-semibold text-zinc-900">
               Founders often face this:

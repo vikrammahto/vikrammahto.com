@@ -34,11 +34,12 @@ export function Speciality() {
       <div className="space-y-3">
         <p className="text-zinc-500">Why work with me?</p>
         <h2 className="text-3xl font-bold text-zinc-950 sm:text-4xl">
-          What could make us a great fit?
+          What could make us <br className="sm:hidden" /> a great fit?
         </h2>
         <p className="text-zinc-600">
-          A few reasons founders choose to work with me <br /> when they need
-          clarity, speed, and thoughtful product execution.
+          A few reasons founders choose to work with me{' '}
+          <br className="hidden sm:block" /> when they need clarity, speed, and
+          thoughtful product execution.
         </p>
       </div>
 

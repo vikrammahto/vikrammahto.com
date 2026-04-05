@@ -13,8 +13,9 @@ export function Hero() {
           to launch.
         </p> */}
         <p className="mx-auto mt-6 max-w-3xl text-xl text-zinc-700">
-          Design Engineer helping early-stage founders <br /> go from idea →
-          design → development → deployment — fast, clean, and scalable.
+          Design Engineer helping early-stage founders{' '}
+          <br className="hidden sm:block" /> go from idea → design → development
+          → deployment — fast, clean, and scalable.
         </p>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
