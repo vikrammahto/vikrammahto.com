@@ -1,6 +1,7 @@
 'use client';
 import {
   GithubLogoIcon,
+  InstagramLogoIcon,
   LinkedinLogoIcon,
   XLogoIcon,
 } from '@phosphor-icons/react';
@@ -22,6 +23,11 @@ const socials = [
     href: 'https://x.com/vikramstack',
     icon: XLogoIcon,
   },
+  {
+    name: 'Instagram',
+    href: 'https://instagram.com/vikrammahto',
+    icon: InstagramLogoIcon,
+  },
 ];
 
 export const Footer = () => {
@@ -41,7 +47,7 @@ export const Footer = () => {
             href={social.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="mx-2 inline-block transition-colors hover:-translate-y-2 hover:text-zinc-700"
+            className="mx-2 inline-block transition-colors hover:text-zinc-700"
           >
             <social.icon size={24} />
           </a>
