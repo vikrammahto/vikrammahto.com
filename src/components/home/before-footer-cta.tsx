@@ -4,15 +4,15 @@ export function BeforeFooterCta() {
   return (
     <section id="contact" className="px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
       <div className="flex flex-col items-center gap-8 rounded-3xl bg-zinc-950 px-6 py-8 text-center text-white sm:px-8">
-        <h2 className="mt-2 text-xl sm:text-3xl">
-          Have an idea in mind?{' '}
-          <span className="block text-5xl">Let’s build it together.</span>
-        </h2>
-        <p className="max-w-2xl text-zinc-300">
-          From concept to launch, I help founders
-          <br className="hidden sm:block" /> turn ideas into polished, usable,
-          and scalable digital products.
-        </p>
+        <div className="mt-2">
+          <h2 className="mb-3 inline-flex rounded-full border border-zinc-700 px-4 py-1 text-xl">
+            AI interfaces not converting?
+          </h2>
+          <h1 className="mx-auto max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">
+            Your product deserves better <br className="hidden sm:block" /> than
+            AI generated slop.
+          </h1>
+        </div>
         <Link
           href="https://cal.com/vikramstack/discovery"
           target="_blank"

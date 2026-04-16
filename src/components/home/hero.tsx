@@ -15,13 +15,14 @@ export function Hero() {
 
         <p className="text-2xl text-zinc-600">Hi, I’m Vikram Mahto</p>
         <h1 className="mx-auto mt-3 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">
-          Your product deserves better than AI-generated slop.
+          I fix AI-generated interfaces and build ones that actually convert.
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-2xl text-zinc-700">
-          I fix, design, and build interfaces that{' '}
-          <br className="hidden sm:block" /> actually convert – clean,
-          accessible, and built to last.
+          AI made it fast. I make it actually good. I fix, design, and build
+          interfaces that actually convert – clean, accessible, and built to
+          last.
         </p>
+
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="https://cal.com/vikramstack/discovery"

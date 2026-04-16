@@ -7,12 +7,12 @@ const reasons = [
   {
     title: 'Built for founders who move fast',
     description:
-      'I work in tight sprints with clear checkpoints. You always know what\'s done, what\'s next, and what needs your input – no chasing updates.',
+      "I work in tight sprints with clear checkpoints. You always know what's done, what's next, and what needs your input – no chasing updates.",
   },
   {
     title: 'Design that actually converts',
     description:
-      'I don\'t just make things look clean. Every decision is tied to usability, trust signals, and moving users toward action. Good design should pay for itself.',
+      "I don't just make things look clean. Every decision is tied to usability, trust signals, and moving users toward action. Good design should pay for itself.",
   },
   {
     title: 'No bloat, no scope creep',
@@ -32,14 +32,14 @@ export function Speciality() {
   return (
     <div className="px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
       <div className="space-y-3">
-       
+        <p className="text-zinc-500">Why work with me?</p>
         <h2 className="text-3xl font-bold text-zinc-950 sm:text-4xl">
-          What could make us <br className="sm:hidden" /> a great fit?
+          You've probably been burned <br className="sm:hidden" /> before.
         </h2>
         <p className="text-zinc-600">
-          A few reasons founders choose to work with me{' '}
-          <br className="hidden sm:block" /> when they need clarity, speed, and
-          thoughtful product execution.
+          Slow agencies. Developers who can't design.{' '}
+          <br className="hidden sm:block" /> Designers who can't ship. Here's
+          why working with me is different.
         </p>
       </div>
 

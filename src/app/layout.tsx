@@ -9,9 +9,9 @@ const figtree = Figtree({
 });
 
 export const metadata = {
-  title: 'Vikram Mahto | Design Engineer | UI/UX + Frontend',
+  title: 'Vikram Mahto – UI/UX Designer & Frontend Developer',
   description:
-    'Design Engineer specializing in responsive, accessible, and high-performance websites using React.js, Next.js, and TailwindCSS.',
+    'I design and build clean, accessible web and mobile interfaces. UX audits, AI website redesigns, and full product builds. Book a free discovery call.',
   keywords: [
     'Frontend Developer',
     'Frontend Engineer',
@@ -26,15 +26,15 @@ export const metadata = {
   openGraph: {
     type: 'website',
     url: 'https://vikrammahto.com',
-    title: 'Vikram Mahto | Design Engineer | UI/UX + Frontend',
+    title: 'Vikram Mahto – UI/UX Designer & Frontend Developer',
     description:
-      "I build visually appealing, high-performance, and accessible websites. Let's create something amazing together!",
+      'I design and build clean, accessible web and mobile interfaces. UX audits, AI website redesigns, and full product builds. Book a free discovery call.',
     images: [
       {
         url: '/vikram-mahto-frontend-developer.png',
         width: 1200,
         height: 630,
-        alt: 'Vikram Mahto - Design Engineer | UI/UX + Frontend',
+        alt: 'Vikram Mahto - UI/UX Designer & Frontend Developer',
       },
     ],
   },
