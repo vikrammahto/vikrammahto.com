@@ -41,9 +41,9 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@vikramstack',
-    title: 'Vikram Mahto | Design Engineer | UI/UX + Frontend',
+    title: 'Vikram Mahto – UI/UX Designer & Frontend Developer',
     description:
-      "I craft modern, user-friendly web experiences using React, Next.js, and TailwindCSS. Let's collaborate!",
+      'I design and build clean, accessible web and mobile interfaces. UX audits, AI website redesigns, and full product builds. Book a free discovery call.',
     images: ['/vikram-mahto-frontend-developer.png'],
   },
   alternates: {

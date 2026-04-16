@@ -1,28 +1,49 @@
 const faqs = [
   {
-    question: 'What kind of products do you usually work on?',
+    question: 'What does a UX Audit include and how long does it take?',
     answer:
-      'I mainly help founders and startups with landing pages, MVPs, dashboards, internal tools, and polished product experiences.',
+      "A full review of your product's interface – user flows, visual hierarchy, copy, and interaction patterns. You'll get a prioritized written report of all issues plus before/after mockups. Most audits take 2–3 business days depending on scope.",
   },
   {
-    question: 'Can you handle both design and development?',
+    question: 'How much does it cost?',
     answer:
-      'Yes — I can support product thinking, UI/UX design, and frontend development, which helps keep the process faster and more consistent.',
+      'A UX audit starts at $150. Full redesign with implementation is scoped per project, typically ranging from $500 to $5000 depending on complexity. I keep engagements focused so you get clear ROI, not endless billable hours. Reach out and I can give you an accurate quote within 24 hours.',
+  },
+  {
+    question:
+      'My product was built with an AI website builder. Can you still fix it?',
+    answer:
+      'Yes. AI-generated UIs, whether from Bolt, Lovable, v0, Replit, Framer, Webflow, or Bubble – are usually generic, inconsistent, and low-trust out of the box. The code works, but it rarely looks or feels like a real product. I can redesign in Figma or implement the fix directly in code, whichever works better for you.',
+  },
+  {
+    question: 'Do you deliver Figma files or do you also implement the design?',
+    answer:
+      'Both. I can deliver Figma files with complete design specs if you have an in-house developer, or implement the design myself in React/Next.js. If you want to move fast and skip the handoff, the full design-to-code package is usually the better choice.',
+  },
+  {
+    question: "What's WCAG and why does accessibility matter for my product?",
+    answer:
+      'WCAG (Web Content Accessibility Guidelines) are the standards that make your product usable by people with disabilities – visual, motor, or cognitive. Beyond being the right thing to do, accessibility compliance reduces legal risk and expands your market. Accessible design also tends to mean better design for everyone.',
   },
   {
     question: 'How long does a typical project take?',
     answer:
-      'It depends on scope, but smaller projects can move quickly while larger product builds are usually planned in clear phases with timelines upfront.',
+      "It depends on scope. A UX audit takes 2–3 days. A full redesign with implementation is usually 2–4 weeks. You'll get a clear timeline upfront before anything starts.",
   },
   {
-    question: 'Do you work with remote clients?',
+    question: 'Who do you typically work with?',
     answer:
-      'Absolutely. I work remotely and keep communication simple through regular updates, async check-ins, and milestone-based delivery.',
+      "Mostly early-stage founders, indie hackers, and small product teams who launched fast and now need their UI to actually convert. If your product works but looks rough or confusing to users, you're probably the right fit.",
+  },
+  {
+    question: 'How does the revision process work?',
+    answer:
+      'Every project includes two rounds of revisions. I share work-in-progress early so there are no big surprises at the end. You can leave feedback directly in Figma or via a shared doc – whatever works for you.',
   },
   {
     question: 'What do you need from me to get started?',
     answer:
-      'Usually just the idea, your goals, and any existing context. From there, I can help shape the scope and next steps.',
+      "Usually just access to your current product (or mockups if you're starting fresh), your goals, and context about your users. From there I can shape the scope and give you a clear next step.",
   },
 ];
 

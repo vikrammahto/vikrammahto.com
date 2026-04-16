@@ -19,32 +19,32 @@ const processSteps = [
     number: '01',
     title: 'Discovery Call',
     description:
-      'We begin with a quick call to understand your idea, audience, and goals.',
-    tags: ['Idea', 'Audience', 'Goals'],
+      'A focused 30-minute call to understand your product, your users, and what\'s not working. No fluff – just enough context to hit the ground running.',
+    tags: ['Product', 'Users', 'Pain Points'],
     icons: [LightbulbFilamentIcon, UsersThreeIcon, CrosshairIcon],
   },
   {
     number: '02',
-    title: 'Planning & Strategy',
+    title: 'Audit & Strategy',
     description:
-      'Next, I turn your idea into a clear roadmap with the right features and direction.',
-    tags: ['Roadmap', 'Features', 'Direction'],
+      'I review your current product and identify the highest-impact UX and design issues. You get a prioritized plan before a single pixel is moved.',
+    tags: ['UX Audit', 'Priorities', 'Plan'],
     icons: [BlueprintIcon, ClipboardTextIcon, CompassIcon],
   },
   {
     number: '03',
-    title: 'Scope & Timeline',
+    title: 'Scope & Proposal',
     description:
-      'You get a clear project scope, timeline, and deliverables before we begin.',
-    tags: ['Scope', 'Timeline', 'Deliverables'],
+      'You receive a clear proposal – exact deliverables, timeline, and pricing. No surprises, no scope creep. You approve before work begins.',
+    tags: ['Deliverables', 'Timeline', 'Pricing'],
     icons: [MapPinSimpleAreaIcon, ClockUserIcon, PackageIcon],
   },
   {
     number: '04',
-    title: 'Build & Launch',
+    title: 'Design & Build',
     description:
-      'I design, build and launch the product with regular updates along the way.',
-    tags: ['Build', 'Refine', 'Launch'],
+      'I design and implement in focused sprints with check-ins at each milestone. You review, give feedback, and we refine until it ships.',
+    tags: ['Design', 'Build', 'Launch'],
     icons: [CodeSimpleIcon, ScanIcon, RocketLaunchIcon],
   },
 ];

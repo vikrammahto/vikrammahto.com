@@ -3,17 +3,19 @@
 import { CheckCircleIcon, XCircleIcon, XIcon } from '@phosphor-icons/react';
 
 const founderChallenges = [
-  'building takes too long',
-  'design and development feel disconnected',
-  'early versions look unfinished',
-  'shipping gets delayed by unclear execution',
+  'My product looks like it was made by ChatGPT',
+  'Users land on my site and immediately lose trust',
+  "My app has a 60% drop-off and I don't know why",
+  'My designer and developer keep blaming each other',
+  "I got an accessibility complaint and don't know where to start",
 ];
 
 const whatIBring = [
-  'a smoother path from idea to launch',
-  'one partner across product, design, and development',
-  'clean interfaces ready for real users',
-  'faster progress with less back-and-forth',
+  'A design that looks intentional, not generated',
+  'Interfaces users actually understand on first visit',
+  "A UX audit that tells you exactly what's broken and why",
+  'One person who handles both – no miscommunication',
+  'WCAG-compliant fixes delivered fast with documentation',
 ];
 
 export function ProblemSolution() {
@@ -21,9 +23,8 @@ export function ProblemSolution() {
     <section className="px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
       <div className="mx-auto space-y-8 text-center text-xl">
         <p className="text-2xl text-zinc-700">
-          I work with founders and organizations who want to{' '}
-          <br className="hidden sm:block" /> turn ideas into real, usable
-          products — not just prototypes.
+          I work with founders and teams <br className="hidden sm:block" /> who
+          are done prototyping – and ready to ship something real.
         </p>
 
         <div className="grid gap-4 rounded-3xl border-dashed border-zinc-300 sm:border sm:p-6 md:grid-cols-2">

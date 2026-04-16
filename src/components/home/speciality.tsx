@@ -1,23 +1,23 @@
 const reasons = [
   {
-    title: 'One person. Full product.',
+    title: 'One person. Full ownership.',
     description:
-      'No need to hire a separate designer and developer. I handle both.',
+      'No handoff delays between designer and developer – I own the full stack from Figma to deployed code. Decisions move faster, and nothing gets lost in translation.',
   },
   {
-    title: 'Speed without chaos',
+    title: 'Built for founders who move fast',
     description:
-      'You get fast delivery without messy code, broken UX, or unclear process.',
+      'I work in tight sprints with clear checkpoints. You always know what\'s done, what\'s next, and what needs your input – no chasing updates.',
   },
   {
-    title: 'Startup-focused mindset',
+    title: 'Design that actually converts',
     description:
-      'I think beyond features — usability, scalability, and real user problems.',
+      'I don\'t just make things look clean. Every decision is tied to usability, trust signals, and moving users toward action. Good design should pay for itself.',
   },
   {
-    title: 'Clear communication',
+    title: 'No bloat, no scope creep',
     description:
-      'Everything stays documented, transparent, and easy to follow from start to finish.',
+      'You get a fixed scope and a clear proposal before work starts. No surprise invoices, no endless revision loops.',
   },
 ];
 
@@ -32,7 +32,7 @@ export function Speciality() {
   return (
     <div className="px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
       <div className="space-y-3">
-        <p className="text-zinc-500">Why work with me?</p>
+       
         <h2 className="text-3xl font-bold text-zinc-950 sm:text-4xl">
           What could make us <br className="sm:hidden" /> a great fit?
         </h2>

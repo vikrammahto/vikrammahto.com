@@ -33,11 +33,10 @@ export function TechStack() {
     <section className="px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
       <div className="space-y-3 text-center">
         <p className="text-zinc-500">
-          Tools & Technologies <br className="sm:hidden" /> that I work with
+          Designed in Figma. Built with React, Next.js, and Tailwind.
         </p>
         <h2 className="text-3xl font-bold text-zinc-950 sm:text-4xl">
-          A focused set of tools I use to design, build, <br />
-          and ship fast, scalable digital products.
+          What you see in the mockup is exactly what ships.
         </h2>
       </div>
       <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
