@@ -57,6 +57,13 @@ export function Services() {
           >
             <h3 className="text-2xl font-semibold">{service.title}</h3>
             <p className="mt-2 text-zinc-700">{service.description}</p>
+            {service.points && (
+              <ul className="ms-3 mt-3 list-disc text-lg text-zinc-700">
+                {service.points.map((point, index) => (
+                  <li key={index}>{point}</li>
+                ))}
+              </ul>
+            )}
           </div>
         ))}
       </div>
