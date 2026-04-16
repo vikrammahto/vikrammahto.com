@@ -1,3 +1,6 @@
+'use client';
+import { PlusIcon } from '@phosphor-icons/react';
+
 const faqs = [
   {
     question: 'What does a UX Audit include and how long does it take?',
@@ -69,8 +72,8 @@ export function Faq() {
           >
             <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-zinc-950">
               <span>{faq.question}</span>
-              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-zinc-200 text-lg text-zinc-600 transition group-open:rotate-45">
-                +
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-zinc-200 text-lg text-zinc-600 transition group-open:rotate-45">
+                <PlusIcon size={16} weight="bold" />
               </span>
             </summary>
             <p className="mt-3 max-w-3xl text-zinc-600">{faq.answer}</p>

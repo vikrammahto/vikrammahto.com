@@ -61,9 +61,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${figtree.className} bg-gradient-to-b from-zinc-100 via-white to-zinc-200 antialiased`}
-      >
+      <body className={`${figtree.className} antialiased`}>
         <main>{children}</main>
         <Footer />
       </body>
