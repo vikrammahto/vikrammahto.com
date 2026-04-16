@@ -20,7 +20,9 @@ export function Hero() {
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link
-            href="https://www.linkedin.com/in/vikrammahto/"
+            href="https://cal.com/vikramstack/discovery"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group flex items-center justify-center rounded-2xl border border-orange-600 bg-gradient-to-b from-orange-400 via-orange-500 to-orange-600 px-5 py-2 text-lg font-medium text-white shadow-[inset_0_1px_0px_0px_#fdba74] transition-all hover:scale-110 hover:from-orange-600 hover:to-orange-400 active:[box-shadow:none]"
           >
             <span className="block group-active:[transform:translate3d(0,1px,0)]">
