@@ -1,23 +1,27 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 export function Hero() {
   return (
     <section className="flex min-h-screen items-center justify-center px-6 pt-8 pb-16 text-center sm:px-10 lg:px-16 lg:pt-10 lg:pb-24">
       <div>
+        <Image
+          src={'/vikram-mahto-design-engineer.jpg'}
+          alt="Vikram Mahto"
+          width={800}
+          height={800}
+          className="mx-auto mb-2 w-20 rotate-10 rounded-lg transition-all hover:w-32 hover:rotate-0"
+        />
+
         <p className="text-2xl text-zinc-600">Hi, I’m Vikram Mahto</p>
         <h1 className="mx-auto mt-3 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
           I turn startup ideas into real, working products.
         </h1>
-        {/* <p className="mx-auto mt-3 max-w-3xl text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-          I build scalable digital products for founders & startups — from idea
-          to launch.
-        </p> */}
         <p className="mx-auto mt-6 max-w-3xl text-xl text-zinc-700">
           Design Engineer helping early-stage founders{' '}
           <br className="hidden sm:block" /> go from idea → design → development
           → deployment — fast, clean, and scalable.
         </p>
-
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           <Link
             href="https://cal.com/vikramstack/discovery"
