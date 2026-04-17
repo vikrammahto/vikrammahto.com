@@ -1,6 +1,7 @@
 import { Figtree } from 'next/font/google';
 import './globals.css';
 import { Footer } from '@/components/layout/footer';
+import { Header } from '@/components/layout/header';
 
 const figtree = Figtree({
   subsets: ['latin'],
@@ -61,7 +62,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${figtree.className} antialiased`}>
+      <body className={`${figtree.className} bg-olive-50/50 antialiased`}>
         <main>{children}</main>
         <Footer />
       </body>
