@@ -53,11 +53,11 @@ export function WorkProcess() {
   return (
     <section className="px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
       <div className="space-y-3 text-center">
-        <p className="text-zinc-500">How I work?</p>
-        <h2 className="text-3xl font-bold text-zinc-950 sm:text-4xl">
+        <p className="">How I work?</p>
+        <h2 className="text-3xl font-bold  sm:text-4xl">
           A simple, structured path from idea to launch.
         </h2>
-        <p className="text-zinc-600">
+        <p className="">
           Every step is designed to keep the process clear, collaborative, and
           easy to move through.
         </p>
@@ -70,7 +70,7 @@ export function WorkProcess() {
               key={step.title}
               className="group rounded-3xl border border-dashed border-zinc-200/80 bg-gradient-to-br from-white to-zinc-50/80 p-5 ring-1 ring-black/[0.02] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/60 sm:p-6"
             >
-              <span className="inline-flex text-6xl font-black tracking-tighter text-zinc-200 transition-colors duration-300 group-hover:text-zinc-300">
+              <span className="inline-flex text-6xl font-black tracking-tighter  transition-colors duration-300 text-zinc-600 ">
                 {step.number}
               </span>
 

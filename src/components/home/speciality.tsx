@@ -48,16 +48,16 @@ export function Speciality() {
           <div
             key={reason.title}
             className={[
-              'rounded-2xl border border-dashed border-zinc-200 bg-zinc-50 p-5 text-left transition-all duration-200 hover:-translate-y-1',
+              'rounded-2xl border border-dashed border-zinc-200 bg-zinc-50/10 p-5 text-left transition-all duration-200 hover:-translate-y-1',
               cardLayouts[index],
             ].join(' ')}
           >
             <div className="flex h-full flex-col justify-between gap-8">
-              <p className="mt-4 text-lg font-semibold text-zinc-950 sm:text-xl">
+              <p className="mt-4 text-lg font-semibold  sm:text-xl">
                 {reason.title}
               </p>
 
-              <p className="max-w-md text-zinc-700">{reason.description}</p>
+              <p className="max-w-md ">{reason.description}</p>
             </div>
           </div>
         ))}

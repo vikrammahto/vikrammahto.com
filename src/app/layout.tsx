@@ -1,7 +1,6 @@
 import { Figtree } from 'next/font/google';
 import './globals.css';
 import { Footer } from '@/components/layout/footer';
-import { Header } from '@/components/layout/header';
 
 const figtree = Figtree({
   subsets: ['latin'],

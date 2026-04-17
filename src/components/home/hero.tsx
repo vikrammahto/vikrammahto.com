@@ -13,7 +13,7 @@ export function Hero() {
           className="mx-auto mb-2 w-20 rotate-10 rounded-lg transition-all hover:w-32 hover:rotate-0"
         />
 
-        <p className="text-2xl text-zinc-600">Hi, I’m Vikram Mahto</p>
+        <p className="text-2xl">Hi, I’m Vikram Mahto</p>
         <h1 className="mx-auto mt-3 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">
           I fix AI-generated interfaces and build ones that actually convert.
         </h1>

@@ -43,10 +43,10 @@ const services = [
 export function Services() {
   return (
     <section id="what-i-do" className="px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
-      <h2 className="text-center text-3xl font-bold text-zinc-950 sm:text-4xl">
+      <h2 className="text-center text-3xl font-bold  sm:text-4xl">
         Here's how I can help.
       </h2>
-      <p className="text-center text-lg text-zinc-700">
+      <p className="text-center text-lg ">
         Let’s turn your vision into something amazing.
       </p>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -56,9 +56,9 @@ export function Services() {
             className="rounded-2xl border border-dashed border-zinc-200 p-5"
           >
             <h3 className="text-2xl font-semibold">{service.title}</h3>
-            <p className="mt-2 text-zinc-700">{service.description}</p>
+            <p className="mt-2 ">{service.description}</p>
             {service.points && (
-              <ul className="ms-3 mt-3 list-disc text-lg text-zinc-700">
+              <ul className="ms-3 mt-3 list-disc text-lg ">
                 {service.points.map((point, index) => (
                   <li key={index}>{point}</li>
                 ))}

@@ -22,22 +22,22 @@ export function ProblemSolution() {
   return (
     <section className="px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
       <div className="mx-auto space-y-8 text-center text-xl">
-        <p className="text-2xl text-zinc-700">
+        <p className="text-2xl ">
           I work with founders and teams <br className="hidden sm:block" /> who
           are done prototyping – and ready to ship something real.
         </p>
 
         <div className="grid gap-4 rounded-3xl border-dashed border-zinc-300 sm:border sm:p-6 md:grid-cols-2">
-          <div className="rounded-2xl border border-dashed border-zinc-200 bg-zinc-50/50 p-6 text-left">
-            <p className="text-2xl font-semibold text-zinc-900">
+          <div className="rounded-2xl border border-dashed border-zinc-200 bg-red-700/10 p-6 text-left">
+            <p className="text-2xl font-semibold ">
               Founders often face this:
             </p>
-            <ul className="mt-3 list-none space-y-2 text-zinc-700">
+            <ul className="mt-3 list-none space-y-2 ">
               {founderChallenges.map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <span className="relative mt-1 inline-flex size-[24px] shrink-0 items-center justify-center">
                     <XCircleIcon
-                      className="text-zinc-200"
+                      className=""
                       size={24}
                       weight="duotone"
                     />
@@ -54,10 +54,10 @@ export function ProblemSolution() {
           </div>
 
           <div className="rounded-2xl border border-dashed border-zinc-200 p-6 text-left">
-            <p className="text-2xl font-semibold text-zinc-900">
+            <p className="text-2xl font-semibold ">
               What I bring instead:
             </p>
-            <ul className="mt-3 list-none space-y-2 text-zinc-700">
+            <ul className="mt-3 list-none space-y-2 ">
               {whatIBring.map((item) => (
                 <li key={item} className="flex items-start gap-2">
                   <CheckCircleIcon
@@ -71,7 +71,7 @@ export function ProblemSolution() {
             </ul>
           </div>
         </div>
-        <p className="mt-4 text-2xl text-zinc-700">
+        <p className="mt-4 text-2xl ">
           The result is simpler delivery, better momentum, <br /> and a product
           people can start using with confidence.
         </p>

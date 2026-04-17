@@ -38,6 +38,7 @@ export const Footer = () => {
         width={200}
         height={55}
         alt="Vikram Mahto Signature"
+        className='brightness-0 invert'
       />
       <div className="text-center">Vikram Mahto</div>
       <div className="flex gap-4">
