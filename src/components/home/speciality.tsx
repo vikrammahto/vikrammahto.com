@@ -53,11 +53,11 @@ export function Speciality() {
             ].join(' ')}
           >
             <div className="flex h-full flex-col justify-between gap-8">
-              <p className="mt-4 text-lg font-semibold  sm:text-xl">
+              <p className="mt-4 text-lg font-semibold sm:text-xl">
                 {reason.title}
               </p>
 
-              <p className="max-w-md ">{reason.description}</p>
+              <p className="max-w-md text-zinc-600">{reason.description}</p>
             </div>
           </div>
         ))}

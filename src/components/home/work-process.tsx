@@ -19,7 +19,7 @@ const processSteps = [
     number: '01',
     title: 'Discovery Call',
     description:
-      'A focused 30-minute call to understand your product, your users, and what\'s not working. No fluff – just enough context to hit the ground running.',
+      "A focused 30-minute call to understand your product, your users, and what's not working. No fluff – just enough context to hit the ground running.",
     tags: ['Product', 'Users', 'Pain Points'],
     icons: [LightbulbFilamentIcon, UsersThreeIcon, CrosshairIcon],
   },
@@ -54,7 +54,7 @@ export function WorkProcess() {
     <section className="px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
       <div className="space-y-3 text-center">
         <p className="">How I work?</p>
-        <h2 className="text-3xl font-bold  sm:text-4xl">
+        <h2 className="text-3xl font-bold sm:text-4xl">
           A simple, structured path from idea to launch.
         </h2>
         <p className="">
@@ -68,9 +68,9 @@ export function WorkProcess() {
           return (
             <div
               key={step.title}
-              className="group rounded-3xl border border-dashed border-zinc-200/80 bg-gradient-to-br from-white to-zinc-50/80 p-5 ring-1 ring-black/[0.02] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/60 sm:p-6"
+              className="group rounded-3xl border border-dashed border-zinc-200/80 bg-linear-to-br from-white to-zinc-50/80 p-5 ring-1 ring-black/2 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/60 sm:p-6"
             >
-              <span className="inline-flex text-6xl font-black tracking-tighter  transition-colors duration-300 text-zinc-600 ">
+              <span className="inline-flex text-6xl font-black tracking-tighter text-zinc-200 transition-colors duration-300 group-hover:text-zinc-600">
                 {step.number}
               </span>
 
