@@ -53,11 +53,11 @@ export function WorkProcess() {
   return (
     <section className="px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
       <div className="space-y-3 text-center">
-        <p className="">How I work?</p>
+        <p className="text-zinc-600">How I work?</p>
         <h2 className="text-3xl font-bold sm:text-4xl">
           A simple, structured path from idea to launch.
         </h2>
-        <p className="">
+        <p className="text-zinc-600">
           Every step is designed to keep the process clear, collaborative, and
           easy to move through.
         </p>

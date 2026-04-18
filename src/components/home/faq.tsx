@@ -54,11 +54,11 @@ export function Faq() {
   return (
     <section className="px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
       <div className="space-y-3 text-center">
-        <p className="text-sm font-semibold ">FAQs</p>
-        <h2 className="text-3xl font-bold  sm:text-4xl">
+        <p className="text-sm font-semibold text-zinc-600">FAQs</p>
+        <h2 className="text-3xl font-bold sm:text-4xl">
           Questions founders usually ask.
         </h2>
-        <p className="mx-auto max-w-2xl ">
+        <p className="mx-auto max-w-2xl text-zinc-600">
           A few quick answers about how I work, what I build, and what to
           expect.
         </p>
@@ -68,15 +68,15 @@ export function Faq() {
         {faqs.map((faq) => (
           <details
             key={faq.question}
-            className="group rounded-[24px] border border-dashed border-zinc-200  p-5"
+            className="group rounded-3xl border border-dashed border-zinc-200 p-5"
           >
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-4 ">
-              <span>{faq.question}</span>
-              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-zinc-200 text-lg  transition group-open:rotate-45">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
+              <span className="font-medium">{faq.question}</span>
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-zinc-200 text-lg transition group-open:rotate-45">
                 <PlusIcon size={16} weight="bold" />
               </span>
             </summary>
-            <p className="mt-3 max-w-3xl ">{faq.answer}</p>
+            <p className="mt-3 max-w-3xl">{faq.answer}</p>
           </details>
         ))}
       </div>
