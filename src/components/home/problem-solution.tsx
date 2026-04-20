@@ -125,7 +125,7 @@ export function ProblemSolution() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-4 text-2xl"
           >
-            The result is simpler delivery, better momentum, <br /> and a
+            The result is simpler delivery, better momentum, <br className='hidden sm:block' /> and a
             product people can start using with confidence.
           </motion.p>
         </div>

@@ -66,7 +66,7 @@ export function Speciality() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-3xl font-bold text-zinc-950 sm:text-4xl"
           >
-            You've probably been burned <br className="sm:hidden" /> before.
+            You've probably been burned before.
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

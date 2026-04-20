@@ -118,9 +118,9 @@ export function Faq() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-3xl font-bold sm:text-4xl"
           >
-            Questions founders usually ask.
+            Questions <br className="block sm:hidden" /> founders usually ask.
           </motion.h2>
-          <motion.p
+          {/* <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -129,7 +129,7 @@ export function Faq() {
           >
             A few quick answers about how I work, what I build, and what to
             expect.
-          </motion.p>
+          </motion.p> */}
         </div>
 
         <div className="mt-8 space-y-3">
