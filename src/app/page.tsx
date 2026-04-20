@@ -9,7 +9,8 @@ import { WorkProcess } from '@/components/home/work-process';
 
 export default function Page() {
   return (
-    <div className="mx-auto max-w-5xl text-xl">
+    <div className="text-xl">
+      {/* <div className="mx-auto max-w-5xl text-xl"></div> */}
       <Hero />
       <ProblemSolution />
       <Services />

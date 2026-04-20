@@ -30,30 +30,32 @@ const techStack = [
 
 export function TechStack() {
   return (
-    <section className="px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
-      <div className="space-y-3 text-center">
-        <p className="text-zinc-600">
-          Designed in Figma. Built with React, Next.js, and Tailwind.
-        </p>
-        <h2 className="text-3xl font-bold sm:text-4xl">
-          What you see in the mockup is exactly what ships.
-        </h2>
-      </div>
-      <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
-        {techStack.map(({ name, logo }) => (
-          <span
-            key={name}
-            className="inline-flex items-center gap-2 rounded-full border border-zinc-300 px-4 py-2 text-sm"
-          >
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              className="h-4 w-4 object-contain"
-            />
-            {name}
-          </span>
-        ))}
-      </div>
-    </section>
+    <div className="mx-auto max-w-5xl">
+      <section className="px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
+        <div className="space-y-3 text-center">
+          <p className="text-zinc-600">
+            Designed in Figma. Built with React, Next.js, and Tailwind.
+          </p>
+          <h2 className="text-3xl font-bold sm:text-4xl">
+            What you see in the mockup is exactly what ships.
+          </h2>
+        </div>
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+          {techStack.map(({ name, logo }) => (
+            <span
+              key={name}
+              className="inline-flex items-center gap-2 rounded-full border border-zinc-300 px-4 py-2 text-sm"
+            >
+              <Image
+                src={logo.src}
+                alt={logo.alt}
+                className="h-4 w-4 object-contain"
+              />
+              {name}
+            </span>
+          ))}
+        </div>
+      </section>
+    </div>
   );
 }
