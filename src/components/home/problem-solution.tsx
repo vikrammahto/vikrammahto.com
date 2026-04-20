@@ -1,5 +1,6 @@
 'use client';
 
+import { motion } from 'motion/react';
 import { CheckCircleIcon, XCircleIcon, XIcon } from '@phosphor-icons/react';
 
 const founderChallenges = [
@@ -18,25 +19,63 @@ const whatIBring = [
   'WCAG-compliant fixes delivered fast with documentation',
 ];
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.08 },
+  },
+};
+
+const listItem = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+};
+
 export function ProblemSolution() {
   return (
     <div className="bg-amber-50">
       <section className="mx-auto max-w-5xl px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
         <div className="mx-auto space-y-8 text-center text-xl">
-          <p className="text-2xl text-neutral-900 sm:text-4xl sm:font-semibold">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-2xl text-neutral-900 sm:text-4xl sm:font-semibold"
+          >
             I work with founders and teams <br className="hidden sm:block" />{' '}
             who are done prototyping – and ready to ship something real.
-          </p>
+          </motion.p>
 
-          <div className="grid gap-4 rounded-3xl border-dashed border-zinc-300 sm:border sm:p-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-dashed border-zinc-200 bg-red-700/10 p-6 text-left">
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="grid gap-4 rounded-3xl border-dashed border-zinc-300 sm:border sm:p-6 md:grid-cols-2"
+          >
+            <motion.div
+              variants={listItem}
+              className="rounded-2xl border border-dashed border-zinc-200 bg-red-700/10 p-6 text-left"
+            >
               <p className="text-2xl font-semibold">
                 Founders often face this:
               </p>
-              <ul className="mt-3 list-none space-y-2">
-                {founderChallenges.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
-                    <span className="relative mt-1 inline-flex size-[24px] shrink-0 items-center justify-center">
+              <motion.ul
+                variants={container}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="mt-3 list-none space-y-2"
+              >
+                {founderChallenges.map((listItemText) => (
+                  <motion.li
+                    key={listItemText}
+                    variants={listItem}
+                    className="flex items-start gap-2"
+                  >
+                    <span className="relative mt-1 inline-flex size-6 shrink-0 items-center justify-center">
                       <XCircleIcon className="" size={24} weight="duotone" />
                       <XIcon
                         className="absolute text-red-500"
@@ -44,32 +83,51 @@ export function ProblemSolution() {
                         weight="bold"
                       />
                     </span>
-                    <span>{item}</span>
-                  </li>
+                    <span>{listItemText}</span>
+                  </motion.li>
                 ))}
-              </ul>
-            </div>
+              </motion.ul>
+            </motion.div>
 
-            <div className="rounded-2xl border border-dashed border-zinc-200 p-6 text-left">
+            <motion.div
+              variants={listItem}
+              className="rounded-2xl border border-dashed border-zinc-200 p-6 text-left"
+            >
               <p className="text-2xl font-semibold">What I bring instead:</p>
-              <ul className="mt-3 list-none space-y-2">
-                {whatIBring.map((item) => (
-                  <li key={item} className="flex items-start gap-2">
+              <motion.ul
+                variants={container}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                className="mt-3 list-none space-y-2"
+              >
+                {whatIBring.map((listItemText) => (
+                  <motion.li
+                    key={listItemText}
+                    variants={listItem}
+                    className="flex items-start gap-2"
+                  >
                     <CheckCircleIcon
                       className="mt-1 shrink-0 text-emerald-700"
                       size={24}
                       weight="fill"
                     />
-                    <span>{item}</span>
-                  </li>
+                    <span>{listItemText}</span>
+                  </motion.li>
                 ))}
-              </ul>
-            </div>
-          </div>
-          <p className="mt-4 text-2xl">
+              </motion.ul>
+            </motion.div>
+          </motion.div>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="mt-4 text-2xl"
+          >
             The result is simpler delivery, better momentum, <br /> and a
             product people can start using with confidence.
-          </p>
+          </motion.p>
         </div>
       </section>
     </div>

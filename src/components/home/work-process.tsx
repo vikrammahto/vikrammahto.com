@@ -1,4 +1,6 @@
 'use client';
+
+import { motion } from 'motion/react';
 import {
   BlueprintIcon,
   ClipboardTextIcon,
@@ -49,37 +51,77 @@ const processSteps = [
   },
 ];
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.15, delayChildren: 0.3 },
+  },
+};
+
+const step = {
+  hidden: { opacity: 0, y: 30 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.2 } },
+};
+
 export function WorkProcess() {
   return (
     <div className="mx-auto max-w-5xl">
       <section className="px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
         <div className="space-y-3 text-center">
-          <p className="text-zinc-600">How I work?</p>
-          <h2 className="text-3xl font-bold sm:text-4xl">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-zinc-600"
+          >
+            How I work?
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-3xl font-bold sm:text-4xl"
+          >
             A simple, structured path from idea to launch.
-          </h2>
-          <p className="text-zinc-600">
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="text-zinc-600"
+          >
             Every step is designed to keep the process clear, collaborative, and
             easy to move through.
-          </p>
+          </motion.p>
         </div>
 
-        <div className="mt-8 grid gap-3 md:grid-cols-2">
-          {processSteps.map((step) => {
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="mt-8 grid gap-3 md:grid-cols-2"
+        >
+          {processSteps.map((stepItem) => {
             return (
-              <div
-                key={step.title}
+              <motion.div
+                key={stepItem.title}
+                variants={step}
                 className="group rounded-3xl border border-dashed border-zinc-200/80 bg-linear-to-br from-white to-zinc-50/80 p-5 ring-1 ring-black/2 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-zinc-200/60 sm:p-6"
               >
                 <span className="inline-flex text-6xl font-black tracking-tighter text-zinc-200 transition-colors duration-300 group-hover:text-zinc-600">
-                  {step.number}
+                  {stepItem.number}
                 </span>
 
                 <div className="mt-6">
                   <div className="mb-4 flex items-center gap-2">
-                    {step.icons.map((Icon, index) => (
+                    {stepItem.icons.map((Icon, idx) => (
                       <span
-                        key={index}
+                        key={idx}
                         className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-zinc-200 bg-white/90 text-zinc-600 shadow-sm transition-transform duration-300 group-hover:-translate-y-0.5"
                       >
                         <Icon size={20} weight="duotone" />
@@ -87,14 +129,14 @@ export function WorkProcess() {
                     ))}
                   </div>
                   <h3 className="text-2xl font-semibold text-zinc-950">
-                    {step.title}
+                    {stepItem.title}
                   </h3>
-                  <p className="mt-2 text-zinc-600">{step.description}</p>
+                  <p className="mt-2 text-zinc-600">{stepItem.description}</p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </section>
     </div>
   );

@@ -1,4 +1,6 @@
 'use client';
+
+import { motion } from 'motion/react';
 import {
   GithubLogoIcon,
   InstagramLogoIcon,
@@ -33,14 +35,32 @@ const socials = [
 export const Footer = () => {
   return (
     <footer className="mt-10 flex flex-col items-center justify-center gap-4 px-4 py-10 text-zinc-500 sm:px-6 lg:px-8">
-      <Image
-        src={'/vikram-sign.svg'}
-        width={200}
-        height={55}
-        alt="Vikram Mahto Signature"
-      />
-      <div className="text-center">Vikram Mahto</div>
-      <div className="flex gap-4">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Image
+          src={'/vikram-sign.svg'}
+          width={200}
+          height={55}
+          alt="Vikram Mahto Signature"
+        />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="text-center"
+      >
+        Vikram Mahto
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="flex gap-4"
+      >
         {socials.map((social) => (
           <a
             key={social.name}
@@ -52,7 +72,7 @@ export const Footer = () => {
             <social.icon size={24} />
           </a>
         ))}
-      </div>
+      </motion.div>
     </footer>
   );
 };

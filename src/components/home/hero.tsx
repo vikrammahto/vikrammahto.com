@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'motion/react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -5,25 +8,53 @@ export function Hero() {
   return (
     <section className="flex min-h-screen items-center justify-center px-6 pt-8 pb-16 text-center sm:px-10 lg:px-16 lg:pt-10 lg:pb-24">
       <div>
-        <Image
-          src={'/vikram-mahto-design-engineer.jpg'}
-          alt="Vikram Mahto"
-          width={800}
-          height={800}
-          className="mx-auto mb-2 w-20 rotate-10 rounded-lg transition-all hover:w-32 hover:rotate-0"
-        />
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8, rotate: 10 }}
+          animate={{ opacity: 1, scale: 1, rotate: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Image
+            src={'/vikram-mahto-design-engineer.jpg'}
+            alt="Vikram Mahto"
+            width={800}
+            height={800}
+            className="mx-auto mb-2 w-20 rotate-10 rounded-lg transition-all hover:w-32 hover:rotate-0"
+          />
+        </motion.div>
 
-        <p className="text-2xl">Hi, I’m Vikram Mahto</p>
-        <h1 className="mx-auto mt-3 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="text-2xl"
+        >
+          Hi, I'm Vikram Mahto
+        </motion.p>
+        <motion.h1
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="mx-auto mt-3 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl"
+        >
           I fix AI-generated interfaces and build ones that actually convert.
-        </h1>
-        <p className="mx-auto mt-6 max-w-3xl text-2xl text-zinc-700">
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="mx-auto mt-6 max-w-3xl text-2xl text-zinc-700"
+        >
           AI made it fast. I make it actually good. I fix, design, and build
           interfaces that actually convert – clean, accessible, and built to
           last.
-        </p>
+        </motion.p>
 
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+          className="mt-8 flex flex-wrap items-center justify-center gap-3"
+        >
           <Link
             href="https://cal.com/vikramstack/discovery"
             target="_blank"
@@ -42,7 +73,7 @@ export function Hero() {
               See Projects
             </span>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

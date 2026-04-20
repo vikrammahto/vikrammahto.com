@@ -1,10 +1,19 @@
+'use client';
+
+import { motion } from 'motion/react';
 import Link from 'next/link';
 
 export function BeforeFooterCta() {
   return (
     <div className="mx-auto max-w-5xl">
       <section id="contact" className="px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
-        <div className="flex flex-col items-center gap-8 rounded-3xl bg-zinc-950 px-6 py-8 text-center text-white sm:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-center gap-8 rounded-3xl bg-zinc-950 px-6 py-8 text-center text-white sm:px-8"
+        >
           <div className="mt-2">
             <h2 className="mb-3 inline-flex rounded-full border border-zinc-700 bg-linear-to-b from-zinc-100/10 to-zinc-50/10 px-4 py-1 text-base">
               AI interfaces not converting?
@@ -34,7 +43,7 @@ export function BeforeFooterCta() {
               t.me/vikramstack
             </Link>
           </p>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

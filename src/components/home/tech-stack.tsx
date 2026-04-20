@@ -1,3 +1,6 @@
+'use client';
+
+import { motion } from 'motion/react';
 import Image from 'next/image';
 
 import {
@@ -28,22 +31,54 @@ const techStack = [
   { name: 'AI SDK', logo: aiSdkLogo },
 ];
 
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.06 },
+  },
+};
+
+const tag = {
+  hidden: { opacity: 0, x: -20 },
+  show: { opacity: 1, x: 0, transition: { duration: 0.4 } },
+};
+
 export function TechStack() {
   return (
     <div className="mx-auto max-w-5xl">
       <section className="px-6 py-16 text-center sm:px-10 lg:px-16 lg:py-24">
         <div className="space-y-3 text-center">
-          <p className="text-zinc-600">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-zinc-600"
+          >
             Designed in Figma. Built with React, Next.js, and Tailwind.
-          </p>
-          <h2 className="text-3xl font-bold sm:text-4xl">
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="text-3xl font-bold sm:text-4xl"
+          >
             What you see in the mockup is exactly what ships.
-          </h2>
+          </motion.h2>
         </div>
-        <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="mt-6 flex flex-wrap items-center justify-center gap-3"
+        >
           {techStack.map(({ name, logo }) => (
-            <span
+            <motion.span
               key={name}
+              variants={tag}
               className="inline-flex items-center gap-2 rounded-full border border-zinc-300 px-4 py-2 text-sm"
             >
               <Image
@@ -52,9 +87,9 @@ export function TechStack() {
                 className="h-4 w-4 object-contain"
               />
               {name}
-            </span>
+            </motion.span>
           ))}
-        </div>
+        </motion.div>
       </section>
     </div>
   );

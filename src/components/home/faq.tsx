@@ -1,5 +1,52 @@
 'use client';
+
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'motion/react';
 import { PlusIcon } from '@phosphor-icons/react';
+
+interface FaqItemProps {
+  question: string;
+  answer: string;
+}
+
+function FaqItem({ question, answer }: FaqItemProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="overflow-hidden rounded-3xl border border-dashed border-zinc-200"
+      onClick={() => setIsOpen(!isOpen)}
+    >
+      <div className="flex cursor-pointer items-center justify-between gap-4 p-5">
+        <span className="font-medium">{question}</span>
+        <motion.span
+          animate={{ rotate: isOpen ? 45 : 0 }}
+          transition={{ duration: 0.3 }}
+          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-zinc-200 text-lg"
+        >
+          <PlusIcon size={16} weight="bold" />
+        </motion.span>
+      </div>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="overflow-hidden"
+          >
+            <p className="max-w-3xl px-5 pb-5">{answer}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
+  );
+}
 
 const faqs = [
   {
@@ -55,30 +102,43 @@ export function Faq() {
     <div className="mx-auto max-w-5xl">
       <section className="px-6 py-16 sm:px-10 lg:px-16 lg:py-24">
         <div className="space-y-3 text-center">
-          <p className="text-sm font-semibold text-zinc-600">FAQs</p>
-          <h2 className="text-3xl font-bold sm:text-4xl">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="text-sm font-semibold text-zinc-600"
+          >
+            FAQs
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-3xl font-bold sm:text-4xl"
+          >
             Questions founders usually ask.
-          </h2>
-          <p className="mx-auto max-w-2xl text-zinc-600">
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="mx-auto max-w-2xl text-zinc-600"
+          >
             A few quick answers about how I work, what I build, and what to
             expect.
-          </p>
+          </motion.p>
         </div>
 
         <div className="mt-8 space-y-3">
           {faqs.map((faq) => (
-            <details
+            <FaqItem
               key={faq.question}
-              className="group rounded-3xl border border-dashed border-zinc-200 p-5"
-            >
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-4">
-                <span className="font-medium">{faq.question}</span>
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-zinc-200 text-lg transition group-open:rotate-45">
-                  <PlusIcon size={16} weight="bold" />
-                </span>
-              </summary>
-              <p className="mt-3 max-w-3xl">{faq.answer}</p>
-            </details>
+              question={faq.question}
+              answer={faq.answer}
+            />
           ))}
         </div>
       </section>
