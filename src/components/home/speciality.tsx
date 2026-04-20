@@ -2,22 +2,22 @@ const reasons = [
   {
     title: 'One person. Full ownership.',
     description:
-      'No handoff delays between designer and developer – I own the full stack from Figma to deployed code. Decisions move faster, and nothing gets lost in translation.',
+      'No need to hire a separate designer and developer. I handle both.',
   },
   {
     title: 'Built for founders who move fast',
     description:
-      "I work in tight sprints with clear checkpoints. You always know what's done, what's next, and what needs your input – no chasing updates.",
+      'You get fast delivery without messy code, broken UX, or unclear process.',
   },
   {
-    title: 'Design that actually converts',
+    title: 'Startup – focused mindset',
     description:
-      "I don't just make things look clean. Every decision is tied to usability, trust signals, and moving users toward action. Good design should pay for itself.",
+      'I think beyond features – usability, scalability, and real user problems.',
   },
   {
-    title: 'No bloat, no scope creep',
+    title: 'Clear communication',
     description:
-      'You get a fixed scope and a clear proposal before work starts. No surprise invoices, no endless revision loops.',
+      'You get a fixed scope and a clear proposal before work starts.',
   },
 ];
 
