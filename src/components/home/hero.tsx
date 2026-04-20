@@ -1,80 +1,51 @@
 'use client';
 
 import { motion } from 'motion/react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export function Hero() {
   return (
-    <section className="flex min-h-screen items-center justify-center px-6 pt-8 pb-16 text-center sm:px-10 lg:px-16 lg:pt-10 lg:pb-24">
-      <div>
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8, rotate: 10 }}
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <Image
-            src={'/vikram-mahto-design-engineer.jpg'}
-            alt="Vikram Mahto"
-            width={800}
-            height={800}
-            className="mx-auto mb-2 w-20 rotate-10 rounded-lg transition-all hover:w-32 hover:rotate-0"
-          />
-        </motion.div>
-
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-2xl"
-        >
-          Hi, I'm Vikram Mahto
-        </motion.p>
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.7 }}
-          className="mx-auto mt-3 max-w-3xl text-4xl font-semibold tracking-tight sm:text-5xl"
-        >
-          I fix AI-generated interfaces and build ones that actually convert.
-        </motion.h1>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.7 }}
-          className="mx-auto mt-6 max-w-3xl text-2xl text-zinc-700"
-        >
-          AI made it fast. I make it actually good. I fix, design, and build
-          interfaces that actually convert – clean, accessible, and built to
-          last.
-        </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
-          className="mt-8 flex flex-wrap items-center justify-center gap-3"
-        >
-          <Link
-            href="https://cal.com/vikramstack/discovery"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group flex items-center justify-center rounded-2xl border border-orange-600 bg-linear-to-b from-orange-400 via-orange-500 to-orange-600 px-5 py-2 text-lg font-medium text-white shadow-[inset_0_1px_0px_0px_#fdba74] transition-all hover:scale-110 hover:from-orange-600 hover:to-orange-400 active:[box-shadow:none]"
+    <div className="bg-neutral-900 text-white">
+      <section className="mx-auto flex min-h-dvh max-w-5xl items-center px-6 pt-8 pb-16 sm:px-10 lg:px-16 lg:pt-10 lg:pb-24">
+        <div>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mx-auto mt-3 text-5xl font-semibold tracking-[-6%] sm:text-8xl"
           >
-            <span className="group-active:transform:[translate3d(0,1px,0)] block">
-              Book a Call
-            </span>
-          </Link>
-          <Link
-            href="#projects"
-            className="group flex items-center justify-center rounded-2xl border border-gray-200 bg-linear-to-b from-gray-50 via-gray-50 to-gray-200 px-5 py-2 text-lg font-medium text-gray-950 transition-all hover:scale-110 hover:bg-linear-to-b hover:from-gray-100 hover:via-gray-100 hover:to-gray-100 active:shadow-inner"
+            AI made it fast. <br />I make it actually good.
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.7 }}
+            className="mt-6 text-2xl sm:text-3xl"
           >
-            <span className="group-active:transform:[translate3d(0,1px,0)] block">
-              See Projects
-            </span>
-          </Link>
-        </motion.div>
-      </div>
-    </section>
+            I fix, design, and build interfaces{' '}
+            <br className="hidden sm:block" /> that actually convert – clean,
+            accessible, and built to last.
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="mt-8 flex"
+          >
+            <Link
+              href="https://cal.com/vikramstack/discovery"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center rounded-2xl border border-orange-600 bg-linear-to-b from-orange-400 via-orange-500 to-orange-600 px-5 py-2 text-lg font-medium text-white shadow-[inset_0_1px_0px_0px_#fdba74] transition-all hover:scale-110 hover:from-orange-600 hover:to-orange-400 active:[box-shadow:none]"
+            >
+              <span className="group-active:transform:[translate3d(0,1px,0)] block">
+                Book a FREE Discovery Call
+              </span>
+            </Link>
+          </motion.div>
+        </div>
+      </section>
+    </div>
   );
 }

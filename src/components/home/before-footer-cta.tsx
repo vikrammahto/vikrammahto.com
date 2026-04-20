@@ -12,7 +12,7 @@ export function BeforeFooterCta() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col items-center gap-8 rounded-3xl bg-zinc-950 px-6 py-8 text-center text-white sm:px-8"
+          className="flex flex-col items-center gap-8 rounded-3xl bg-neutral-900 px-6 py-8 text-center text-white sm:px-8"
         >
           <div className="mt-2">
             <h2 className="mb-3 inline-flex rounded-full border border-zinc-700 bg-linear-to-b from-zinc-100/10 to-zinc-50/10 px-4 py-1 text-base">
@@ -27,7 +27,7 @@ export function BeforeFooterCta() {
             href="https://cal.com/vikramstack/discovery"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center justify-center rounded-2xl border border-orange-600 bg-linear-to-b from-orange-400 via-orange-500 to-orange-600 px-5 py-2 text-lg font-medium text-white shadow-[inset_0_1px_0px_0px_#fdba74] transition-all hover:scale-110 hover:from-orange-600 hover:to-orange-400 active:[box-shadow:none]"
+            className="group items-center hover:scale-110 flex justify-center rounded-2xl border border-orange-600 bg-linear-to-b from-orange-400 via-orange-500 to-orange-600 px-5 py-2 text-lg font-medium text-white shadow-[inset_0_1px_0px_0px_#fdba74] transition-all hover:from-orange-600 hover:to-orange-400 active:[box-shadow:none]"
           >
             <span className="group-active:transform:translate3d(0,1px,0) block">
               Book a FREE Discovery Call
