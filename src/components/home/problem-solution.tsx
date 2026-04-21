@@ -4,19 +4,17 @@ import { motion } from 'motion/react';
 import { CheckCircleIcon, XCircleIcon, XIcon } from '@phosphor-icons/react';
 
 const founderChallenges = [
-  'My product looks like it was made by ChatGPT',
-  'Users land on my site and immediately lose trust',
-  "My app has a 60% drop-off and I don't know why",
-  'My designer and developer keep blaming each other',
-  "I got an accessibility complaint and don't know where to start",
+  'building takes too long',
+  'design and development feel disconnected',
+  'early versions look unfinished',
+  'shipping gets delayed by unclear execution',
 ];
 
 const whatIBring = [
-  'A design that looks intentional, not generated',
-  'Interfaces users actually understand on first visit',
-  "A UX audit that tells you exactly what's broken and why",
-  'One person who handles both – no miscommunication',
-  'WCAG-compliant fixes delivered fast with documentation',
+  'a smoother path from idea to launch',
+  'one partner across product, design, and development',
+  'clean interfaces ready for real users',
+  'faster progress with less back-and-forth',
 ];
 
 const container = {
@@ -53,11 +51,11 @@ export function ProblemSolution() {
             initial="hidden"
             whileInView="show"
             viewport={{ once: true }}
-            className="grid gap-4 rounded-3xl border-dashed border-zinc-300 sm:border sm:p-6 md:grid-cols-2"
+            className="grid gap-4 md:grid-cols-2"
           >
             <motion.div
               variants={listItem}
-              className="rounded-2xl border border-dashed border-zinc-200 bg-red-700/10 p-6 text-left"
+              className="rounded-2xl border border-dashed border-zinc-200 p-6 text-left"
             >
               <p className="text-2xl font-semibold">
                 Founders often face this:
@@ -76,7 +74,11 @@ export function ProblemSolution() {
                     className="flex items-start gap-2"
                   >
                     <span className="relative mt-1 inline-flex size-6 shrink-0 items-center justify-center">
-                      <XCircleIcon className="" size={24} weight="duotone" />
+                      <XCircleIcon
+                        className="text-zinc-100"
+                        size={24}
+                        weight="duotone"
+                      />
                       <XIcon
                         className="absolute text-red-500"
                         size={10}
@@ -125,8 +127,9 @@ export function ProblemSolution() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="mt-4 text-2xl"
           >
-            The result is simpler delivery, better momentum, <br className='hidden sm:block' /> and a
-            product people can start using with confidence.
+            The result is simpler delivery, better momentum,{' '}
+            <br className="hidden sm:block" /> and a product people can start
+            using with confidence.
           </motion.p>
         </div>
       </section>

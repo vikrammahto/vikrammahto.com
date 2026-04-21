@@ -21,7 +21,7 @@ const reasons = [
   {
     title: 'Clear communication',
     description:
-      'You get a fixed scope and a clear proposal before work starts.',
+      'Everything stays documented, transparent, and easy to follow-up from start to finish.',
   },
 ];
 
@@ -98,7 +98,7 @@ export function Speciality() {
               ].join(' ')}
             >
               <div className="flex h-full flex-col justify-between gap-8">
-                <p className="mt-4 text-lg font-semibold sm:text-xl">
+                <p className="mt-4 text-lg font-semibold sm:text-2xl">
                   {reason.title}
                 </p>
 
