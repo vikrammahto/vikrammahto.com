@@ -1,12 +1,34 @@
 'use client';
 
 import { motion } from 'motion/react';
+import Image from 'next/image';
 import Link from 'next/link';
+import { GrainGradient } from '@paper-design/shaders-react';
 
 export function Hero() {
   return (
-    <div className="bg-neutral-900 text-white">
-      <section className="mx-auto flex min-h-dvh max-w-5xl items-center px-6 pt-8 pb-16 sm:px-10 lg:px-16 lg:pt-10 lg:pb-24">
+    <div className="relative min-h-dvh w-full overflow-hidden bg-linear-to-b from-cyan-950 to-neutral-950 text-white">
+      <GrainGradient
+        colors={['#113388']}
+        colorBack="#000000"
+        softness={0.44}
+        intensity={1}
+        noise={1}
+        shape="corners"
+        speed={0.5}
+        scale={1.24}
+        rotation={64}
+        className="absolute h-full w-full"
+      />
+      <Image
+        src="/hero-background.png"
+        alt="The Creation of Adam, but with a computer and a human hand reaching towards each other."
+        fill
+        className="object-cover opacity-10"
+        priority
+      />
+
+      <section className="relative z-10 mx-auto flex min-h-dvh max-w-5xl items-center px-6 pt-8 pb-16 sm:px-10 lg:px-16 lg:pt-10 lg:pb-24">
         <div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
