@@ -1,3 +1,4 @@
+import { AboutMe } from '@/components/home/about-me';
 import { BeforeFooterCta } from '@/components/home/before-footer-cta';
 import { Faq } from '@/components/home/faq';
 import { Hero } from '@/components/home/hero';
@@ -10,8 +11,8 @@ import { WorkProcess } from '@/components/home/work-process';
 export default function Page() {
   return (
     <div className="text-xl">
-      {/* <div className="mx-auto max-w-5xl text-xl"></div> */}
       <Hero />
+      <AboutMe />
       <ProblemSolution />
       <Services />
       <TechStack />
